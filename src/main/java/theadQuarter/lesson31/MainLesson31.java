@@ -40,10 +40,10 @@ public class MainLesson31<E> {
         return new ArrayList<>(List.of(arr));
     }
 
-    public void replaceElements(E first, E second){
-        E swap = second;
-        second = first;
-        first = swap;
+    public void replaceElements(int first, int second){
+        E swap = arr[second];
+        arr[second] = arr[first];
+        arr[first] = swap;
 
     }
 }
